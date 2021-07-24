@@ -27,8 +27,7 @@ object Service {
 
             withContext(Dispatchers.Main) {
                 try {
-//                    val response = getRetrofit().create(ApiProducto::class.java)
-//                        .guardarPost(post.titulo, post.imagen, post.descripcion)
+
     Log.e("dataos publicos = ","${post.id}")
                     val response = getRetrofit().create(ApiProducto::class.java)
                         .guardarPost(post.titulo,post.imagen,post.descripcion)

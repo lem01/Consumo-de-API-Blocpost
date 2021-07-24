@@ -79,9 +79,7 @@ class addPostActivity : AppCompatActivity() {
             finish()
 
         }
-//        binding.BtnData.setOnClickListener {
-//            println("${binding.edTitulo.text}")
-//        }
+
     }
 
     private fun openGallery(){
@@ -131,11 +129,7 @@ private  fun requestCameraPermission() {
     }
 
 
-//    override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray ) {
-//        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
-//
-////        EasyPermissions.onRequestPermissionsResult(requestCode,permissions,grantResults,this)
-//    }
+
 
     //si se edita
     private  fun isEdit(){
@@ -166,8 +160,7 @@ private fun selectImage(data: Intent?){
         val columnIndex = cursor.getColumnIndex(filePathColumn[0])
         mediaPath = cursor.getString(columnIndex)
 
-//        println("mediaPath = $mediaPath")
-        //set the image in imageview
+
 
         val bitmap = BitmapFactory.decodeFile(mediaPath)
 
@@ -195,40 +188,7 @@ private fun selectImage(data: Intent?){
                 selectImage(data)
         }
     }
-//
-//    private fun persmisos(){
-//       val permisos :ArrayList<String> = ArrayList()
-//        permisos.add(android.Manifest.permission.ACCESS_FINE_LOCATION)
-//        permisos.add(android.Manifest.permission.CAMERA)
-//        permisos.add(android.Manifest.permission.MANAGE_EXTERNAL_STORAGE)
-//        permisos.add(android.Manifest.permission.READ_EXTERNAL_STORAGE)
-//        permisos.add(android.Manifest.permission.WRITE_EXTERNAL_STORAGE)
-//
-//        if (EasyPermissions.hasPermissions(this, permisos.get(3))){
-//            Toast.makeText(this,"already",Toast.LENGTH_SHORT).show()
-//    }else{
-//            EasyPermissions.requestPermissions(this,"perd",123,permisos.get(0))
-//            EasyPermissions.requestPermissions(this,"perd",123,permisos.get(1))
-//            EasyPermissions.requestPermissions(this,"perd",123,permisos.get(2))
-//            EasyPermissions.requestPermissions(this,"perd",123,permisos.get(3))
-//            EasyPermissions.requestPermissions(this,"perd",123,permisos.get(4))
-//
-//        }
-//
-//
-//
-//    }
 
-
-//    override fun onPermissionsDenied(requestCode: Int, perms: List<String>) {
-////       if(EasyPermissions.somePermissionPermanentlyDenied(this,pet))
-//        Toast.makeText(this,"permiso denegado",Toast.LENGTH_SHORT).show()
-//    }
-//
-//    override fun onPermissionsGranted(requestCode: Int, perms: List<String>) {
-//        Toast.makeText(this,"permiso aceptado",Toast.LENGTH_SHORT).show()
-//
-//    }
 
 
     //dialogos para cargar
@@ -286,7 +246,7 @@ private fun selectImage(data: Intent?){
                 }
 
 
-//                println("datos de usuario titulo ${postUpload.titulo}")
+
             }
 
         }

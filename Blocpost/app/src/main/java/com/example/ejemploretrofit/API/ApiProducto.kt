@@ -28,24 +28,3 @@ interface ApiProducto {
     @POST("eliminarPost")
     suspend fun eliminarPost(@Field("id") id: Int ) : Response<ProductoResponse>
 }
-//
-//interface ApiProducto {
-//    @GET("obtenerPosts")
-//    suspend fun obtenerTodosPost(): Response<ProductoResponse>
-//
-//    @FormUrlEncoded
-//    @POST("guadarPost")
-//    suspend fun guardarPost(@Field("nombre") nombre: String,
-//                            @Field("precio") precio : Int,
-//                            @Field("cantidad") cantidad : Int) : Response<ProductoResponse>
-//
-//    @FormUrlEncoded
-//    @POST("actualizarProducto")
-//    suspend fun actualizarProducto(@Field("id") id: Int, @Field("nombre") nombre: String,
-//                                   @Field("precio") precio : Int,
-//                                   @Field("cantidad") cantidad : Int) : Response<ProductoResponse>
-//
-//    @FormUrlEncoded
-//    @POST("eliminarProducto")
-//    suspend fun eliminarProducto(@Field("id") id: Int ) : Response<ProductoResponse>
-//}

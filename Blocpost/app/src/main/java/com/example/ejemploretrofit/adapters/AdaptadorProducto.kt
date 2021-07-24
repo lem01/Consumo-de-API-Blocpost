@@ -29,7 +29,7 @@ class adaptadorProducto() : RecyclerView.Adapter<adaptadorProducto.Viewholder>()
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Viewholder {
 
         val v= LayoutInflater.from(parent.context).inflate(R.layout.item_producto,parent,false)
-        //Toast.makeText(p0.context,firestore.listacliente.size.toString(),Toast.LENGTH_SHORT).show()
+
         return Viewholder(v)
     }
 
@@ -76,12 +76,7 @@ class adaptadorProducto() : RecyclerView.Adapter<adaptadorProducto.Viewholder>()
                 }
                 )
 
-//                .setNegativeButton("Noo", DialogInterface.OnClickListener({ dialog,which->
-//                    Toast.makeText(holder.itemView.context,"Cancelando Accion", Toast.LENGTH_SHORT).show()
-//                }))
 
-//            builder.setNegativeButton("No", DialogInterface.OnClickListener { dialog, which ->
-//                Toast.makeText(holder.itemView.context,"Cancelando Accion", Toast.LENGTH_SHORT).show() })
             builder.show()
 
 
@@ -95,74 +90,11 @@ class adaptadorProducto() : RecyclerView.Adapter<adaptadorProducto.Viewholder>()
             holder.itemView.context.startActivity(intent)
 
 
-//            val builder = androidx.appcompat.app.AlertDialog.Builder(holder.itemView.context)
-//            val dialogLayout = LayoutInflater.from(holder.itemView.context).inflate(R.layout.activity_add_post, null)
-//
-//            val edTitulo = dialogLayout.findViewById<EditText>(R.id.edTitulo)
-//            val etPost = dialogLayout.findViewById<EditText>(R.id.EtPost)
-//            val imagenPost = dialogLayout.findViewById<ImageView>(R.id.imageViewPost)
-//            edTitulo.setText(post.titulo)
-//            etPost.setText(post.descripcion)
-//
-//            builder.setView(dialogLayout)
-//
-//            builder.setPositiveButton("Guardar") { dialogInterface, i ->
-//
-//                var postUpdate = Post(0,edTitulo.toString(),imagenPost.toString(),etPost.toString())
-//
-//
-//
-//
-//                CoroutineScope(Dispatchers.IO).launch {
-//                    Service.actualizarPost(holder.itemView.context, postUpdate)
-//
-//                    withContext(Dispatchers.Main) {
-//                        Service.obtenerProductos(this@adaptadorProducto)
-//                    }
-//                }
-////                notifyDataSetChanged()
-//            }
-//            builder.show()
 
 
         }
 
-//despues lo reparo
-  /*      holder.img_editar.setOnClickListener {
-            val builder = androidx.appcompat.app.AlertDialog.Builder(holder.itemView.context)
-            val dialogLayout = LayoutInflater.from(holder.itemView.context).inflate(R.layout.activity_nuevoprod, null)
 
-            val etnombre = dialogLayout.findViewById<EditText>(R.id.et_nuevo_nombre)
-            val etprecio = dialogLayout.findViewById<EditText>(R.id.et_nuevo_precio)
-            val etcantidad = dialogLayout.findViewById<EditText>(R.id.et_nuevo_cantidad)
-
-            etnombre.setText(pro.nombre)
-            etprecio.setText(pro.precio.toString())
-            etcantidad.setText(pro.cantidad.toString())
-
-            builder.setView(dialogLayout)
-            builder.setPositiveButton("Guardar") { dialogInterface, i ->
-
-                   pro.nombre= etnombre.text.toString()
-                   pro.precio= etprecio.text.toString().toFloat()
-                   pro.cantidad= etcantidad.text.toString().toInt()
-
-
-
-
-                CoroutineScope(Dispatchers.IO).launch {
-                    Service.actualizarProductos(holder.itemView.context, pro)
-
-                    withContext(Dispatchers.Main) {
-                        Service.obtenerProductos(this@com.example.ejemploretrofit.adapters.adaptadorProducto)
-                    }
-                }
-//                notifyDataSetChanged()
-
-
-            }
-            builder.show()
-        }*/
 
     }
     private fun mostrarModal(holder: Viewholder)
