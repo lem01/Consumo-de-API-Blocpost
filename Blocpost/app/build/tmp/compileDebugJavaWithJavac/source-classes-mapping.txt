@@ -1,0 +1,10 @@
+com/example/ejemploretrofit/databinding/ActivityMainBinding.java
+ com.example.ejemploretrofit.databinding.ActivityMainBinding
+com/example/ejemploretrofit/databinding/ActivityAddPostBinding.java
+ com.example.ejemploretrofit.databinding.ActivityAddPostBinding
+com/example/ejemploretrofit/databinding/ActivityNuevoprodBinding.java
+ com.example.ejemploretrofit.databinding.ActivityNuevoprodBinding
+com/example/ejemploretrofit/BuildConfig.java
+ com.example.ejemploretrofit.BuildConfig
+com/example/ejemploretrofit/databinding/ItemProductoBinding.java
+ com.example.ejemploretrofit.databinding.ItemProductoBinding
